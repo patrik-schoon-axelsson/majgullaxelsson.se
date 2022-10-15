@@ -1,0 +1,10 @@
+.heroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cms.majgullaxelsson.se/assets/fbb60f1a-58e9-4d56-b753-0a5380aa9e47.jpg");
+    height: 60vh;
+    color: #fff;
+    font-size: 2.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

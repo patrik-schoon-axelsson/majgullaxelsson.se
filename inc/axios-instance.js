@@ -9,9 +9,11 @@ const axiosInstance = axios.create({
 // 401 Http interceptor
 
 axiosInstance.interceptors.response.use((res) => {
+    console.log(res);
+
     return res;
 }, (err) => {
-    console.log(err)
+    console.log(err);
     
     return Promise.reject(error);
 });
