@@ -9,13 +9,13 @@ const axiosInstance = axios.create({
 // 401 Http interceptor
 
 axiosInstance.interceptors.response.use((res) => {
-    console.log(res);
+    // console.log(res.status);
 
     return res;
 }, (err) => {
-    console.log(err);
+    // console.log(err.status);
     
-    return Promise.reject(error);
+    return Promise.reject(err);
 });
 
 export default axiosInstance
