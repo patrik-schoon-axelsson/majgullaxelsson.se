@@ -48,7 +48,7 @@ const BockerPage = ({ book }) => {
                 <Col xs={12} >
                   <div dangerouslySetInnerHTML={{__html: book.Description}} className="p-3" />
                 </Col>
-                </Row>
+              </Row>
             </Container>
         </Layout>
     )
