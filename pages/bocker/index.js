@@ -9,9 +9,9 @@ const BockerIndexPage = ({ books }) => {
         <Layout>
             <Container>
                 <Row>
-                    <h1>Majgull Axelssons böcker</h1>
+                    <h1 className="text-center">Majgull Axelssons böcker</h1>
                     <hr />
-                    <p>
+                    <p className="text-center">
                         Majgulls böcker
                     </p>
                 </Row>
