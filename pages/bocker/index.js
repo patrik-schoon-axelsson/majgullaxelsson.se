@@ -1,15 +1,36 @@
-import { getBooks } from "./[slug]";
+import Link from "next/link";
+import { Container, Row, Col } from "react-bootstrap";
+import axiosInstance from "../../inc/axios-instance";
 import Layout from "../../components/Layout";
 
-const BockerIndexPage = ({}) => {  
-    console.log(getBooks());
-
+const BockerIndexPage = ({ books }) => {  
+    
     return (
         <Layout>
-
-
+            <Container>
+                <Row>
+                    <h1>Majgull Axelssons böcker</h1>
+                    <hr />
+                    <p>
+                        Majgulls böcker
+                    </p>
+                </Row>
+                <Row>
+                    {books.map((book, index) => <Link key={`book-${index}`} href={`bocker/${book.Slug}`}>{book.Title}</Link>)}
+                </Row>
+            </Container>
         </Layout>
         )
 };
 
 export default BockerIndexPage
+
+export async function getStaticProps() {
+    const book = await axiosInstance.get(`/Book`)
+
+    return {
+      props: {
+        books: book.data.data
+      },
+    }
+}

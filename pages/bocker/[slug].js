@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Layout from "../../components/Layout";
 import axiosInstance from "../../inc/axios-instance";
 import { Container, Row, Col } from "react-bootstrap";
@@ -38,6 +39,9 @@ const BockerPage = ({ book }) => {
               <Row>
                 <h1 className="text-center mb-5">{book.Title}</h1>
               </Row>
+              <div >
+                <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} layout="intrinsic" width={500} height={500} />
+              </div>
               <Row>
                 <div dangerouslySetInnerHTML={{__html: book.Description}} className="p-3" />
               </Row>
