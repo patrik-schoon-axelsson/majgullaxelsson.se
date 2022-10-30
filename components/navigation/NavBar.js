@@ -5,7 +5,7 @@ const NavBar = (props) => {
     return (
             <Navbar bg="light" expand="lg">
                 <Container fluid>
-                <Navbar.Brand className="mr-5">
+                <Navbar.Brand className="mr-5 d-none d-sm-block">
                     MajgullAxelsson.se
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="main-navbar" />

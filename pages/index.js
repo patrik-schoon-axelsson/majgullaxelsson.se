@@ -16,7 +16,7 @@ export default function Home({ books, news }) {
       </Head>
       <Container fluid>
         <Row>
-          <HeroImage />
+          <HeroImage latestNews={news[0]} />
         </Row>
         <Row>
           <Col sm={12} md={4}>

@@ -38,14 +38,15 @@ const BockerPage = ({ book }) => {
             <Container>
               <Row>
                 <h1 className="text-center mb-5">{book.Title}</h1>
+                <p className="text-center">ISBN: {book.ISBN}</p>
               </Row>
               <Row>
-                <Col xs={12} >
-                  <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} layout="intrinsic" width={500} height={500} className="rounded mx-auto d-block" />
-                  <br />
-                  <p className="text-center p-3">ISBN: {book.ISBN}</p>
+                <Col xs={12} md={6} lg={4} >
+                  <div style={{width: '100%', height: '100%',  position: 'relative', float: 'left'}} >
+                    <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} objectFit="contain" layout="fill" className="rounded mx-auto d-block" />
+                  </div>                    
                 </Col>
-                <Col xs={12} >
+                <Col xs={12} md={6} lg={8}>
                   <div dangerouslySetInnerHTML={{__html: book.Description}} className="p-3" />
                 </Col>
               </Row>
