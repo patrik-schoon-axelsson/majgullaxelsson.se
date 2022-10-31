@@ -1,13 +1,16 @@
+import Layout from "../../components/Layout";
 import { Container, Row, Col } from "react-bootstrap";
 
 const NewsPage = () => {
 
     return (
-        <Container>
-            <Row>
-                
-            </Row>
-        </Container>
+        <Layout>
+            <Container>
+                <Row>
+                    
+                </Row>
+            </Container>
+        </Layout>
     )
 
 };
