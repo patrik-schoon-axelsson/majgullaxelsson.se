@@ -9,3 +9,8 @@
     background-size: cover;
     position: relative;
 }
+.heroImgAnchorBtn {
+    padding: .5rem;
+    font-size: 2rem;
+    color: #000;
+}   

@@ -42,7 +42,7 @@ const BockerPage = ({ book }) => {
               </Row>
               <Row>
                 <Col xs={12} md={6} lg={4} >
-                  <div style={{width: '100%', height: '100%',  position: 'relative', float: 'left'}} >
+                  <div style={{width: '60vh', height: 'auto',  position: 'relative', float: 'left'}} >
                     <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} objectFit="contain" layout="fill" className="rounded mx-auto d-block" />
                   </div>                    
                 </Col>

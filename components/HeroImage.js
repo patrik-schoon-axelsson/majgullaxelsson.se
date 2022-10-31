@@ -13,11 +13,11 @@ const HeroImage = (props) => {
                     <p className="m-5 text-center">Författare, journalist, debattör.</p>
                 </Row>
                 <br/>
-                <Row>
-                    <h4 className="mb-5 text-center">Senaste Uppdatering:</h4>
+                <Row >
+                    <h4 className="mb-5 text-center">Senaste Uppdatering på sidan:</h4>
                     <br/>
                     <Link href={`/nyheter/${props.latestNews.Slug}`}>
-                        <a className="btn btn-light">{props.latestNews.Header || "Senaste Nytt"}</a>
+                        <a className="btn btn-light"><em className={styles.heroImgAnchorBtn}>{props.latestNews.Header || "Senaste Nytt"}</em></a>
                     </Link>
                 </Row>
             </Container>

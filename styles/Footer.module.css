@@ -1,0 +1,9 @@
+.topper {
+    margin-bottom: 10vh;
+}
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
