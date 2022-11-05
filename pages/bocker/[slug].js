@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Layout from "../../components/Layout";
 import axiosInstance from "../../inc/axios-instance";
@@ -35,6 +36,10 @@ const BockerPage = ({ book }) => {
   
     return (
         <Layout>
+          <Head>
+            <title>{`MajgullAxelssons.se - ${book.Title}}`}</title>
+            <meta name="description" content={book.Description} />
+          </Head>
             <Container>
               <Row>
                 <h1 className="text-center mb-5">{book.Title}</h1>
@@ -42,7 +47,7 @@ const BockerPage = ({ book }) => {
               </Row>
               <Row>
                 <Col xs={12} md={6} lg={4} >
-                  <div style={{width: 'auto', height: '480px',  position: 'relative', float: 'left'}} >
+                  <div style={{width: 'auto', height: '540px',  position: 'relative', float: 'left', display: "block"}} >
                     <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} objectFit="contain" layout="fill" className="rounded mx-auto d-block" />
                   </div>                    
                 </Col>

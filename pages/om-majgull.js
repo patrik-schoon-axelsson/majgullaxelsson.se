@@ -5,6 +5,10 @@ import {  Container, Row, Col } from 'react-bootstrap';
 const AboutPage = () => {
     return (
         <Layout>
+            <Head>
+                <title>{`MajgullAxelssons.se - Om Majgull Axelsson}`}</title>
+                <meta name="description" content="Om Majgull Axelsson i hennes egna ord..." />
+            </Head>
             <Container>
                 <Row>
                     <h1 className="m-3 text-center">Majgull Axelsson om Majgull</h1>
