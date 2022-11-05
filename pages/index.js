@@ -10,7 +10,7 @@ export default function Home({ books, news }) {
   return (
     <Layout>
       <Head>
-        <title>Majgull Axelssons hemsida</title>
+        <title>MajgullAxelsson.se - Huvudsida</title>
         <meta name="description" content="majgullaxelsson.se är författaren och journalisten Majgull Axelssons officiella hemsida." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

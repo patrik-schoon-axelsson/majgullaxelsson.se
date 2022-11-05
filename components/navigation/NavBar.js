@@ -6,7 +6,7 @@ const NavBar = (props) => {
             <Navbar bg="light" expand="lg">
                 <Container fluid>
                 <Navbar.Brand className="mr-5 d-none d-sm-block">
-                    MajgullAxelsson.se
+                    <Link href={"/"}>MajgullAxelsson.se</Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="main-navbar" />
                 <Navbar.Collapse id="main-navbar">
