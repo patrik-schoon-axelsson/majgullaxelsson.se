@@ -12,12 +12,12 @@ const AboutPage = () => {
                 <hr/>
                 <Row>
                     <h4 className="mb-5 text-center">Hej!</h4>
-                    <div style={{width: '100%', height: '120px',  position: 'relative', float: 'left', overflow: "hidden", borderRadius: "50%"}} >
+                    <div style={{width: '100%', height: '480px',  position: 'relative', float: 'left', overflow: "hidden", borderRadius: "50%"}} >
                         <Image src="https://cms.majgullaxelsson.se/assets/a7200bf4-3969-46b2-910d-1f3b2656243a" objectFit="contain" layout="fill" className="imgCircular" />
                     </div>
                 </Row>
                 <Row>
-                    <p className="text-center">
+                    <p className="text-center p-3">
                     Jag heter Majgull Axelsson och är författare. En gång i världen var jag journalist, men det är mer än 30 år sedan och – oss emellan – var jag aldrig särskilt lysande. Kanske berodde det på att jag valde yrket för att det var något jag trodde att jag skulle kunna bli, i stället för det jag verkligen ville bli, nämligen författare. Men det var lite för stort för att ens drömma om. Jag föddes 1947 in i en stor urskånsk släkt i Landskrona. När jag var i femårsåldern bestämde sig SJ för att organisera om sin verksamhet, alltså ställdes min far som var lokeldare på den tiden inför valet att antingen flytta till Nässjö eller att säga upp sig. Följaktligen lämnade vi vår för den tiden moderna tvårummare i Landskrona (rinnande varmvatten, centralvärme och badrum i källaren) för att flytta in i en omodern järnvägarbostad i Nässjö. Där fick vi en lägenhet med två rum och kök med järnspis, men utan både varmvatten och badrum.
                     <br/>
                     Nässjö blev alltså den stad där jag växte upp, vilket har satt sina spår i de romaner jag skriver. Många av dem utspelar sig just i Nässjö, trots att jag lämnade stan som artonårig gymnasist för mer än 55 år sedan. Efter första ring åkte jag och en kompis till Liverpool för att jobba som städerskor på ett hotell över sommarlovet. När jag kom tillbaka visade det sig att mina föräldrar, som hade varit separerade under några år, hade flyttat ihop igen och att de hade gjort det i Stockholm. Dit fick jag också flytta och där fick jag genast börja jobba.

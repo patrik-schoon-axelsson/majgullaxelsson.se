@@ -1,4 +1,5 @@
-import Link from "next/link";
+import BookCard from "../../components/BookCard";
+import Head from 'next/head';
 import { Container, Row, Col } from "react-bootstrap";
 import axiosInstance from "../../inc/axios-instance";
 import Layout from "../../components/Layout";
@@ -6,6 +7,11 @@ import Layout from "../../components/Layout";
 const BockerIndexPage = ({ books }) => {  
     
     return (
+        <>
+        <Head>
+            <title>MajgullAxelssons.se - Böcker skrivna av Majgull Axelsson</title>
+            <meta name="description" content="Information om Majgull Axelssons böcker." />
+        </Head>
         <Layout>
             <Container>
                 <Row>
@@ -16,10 +22,11 @@ const BockerIndexPage = ({ books }) => {
                     </p>
                 </Row>
                 <Row>
-                    {books.map((book, index) => <Link key={`book-${index}`} href={`bocker/${book.Slug}`}>{book.Title}</Link>)}
+                    {books.map((book, index) => <Col key={`col-${index}`} xs={12} sm={6} md={4}><BookCard url={book.Slug} title={book.Title} img={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`}/></Col>)}
                 </Row>
             </Container>
         </Layout>
+        </>
         )
 };
 

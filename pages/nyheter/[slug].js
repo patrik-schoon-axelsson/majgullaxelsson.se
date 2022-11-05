@@ -1,3 +1,4 @@
+import axiosInstance from "../../inc/axios-instance";
 import Layout from "../../components/Layout";
 import { Container, Row, Col } from "react-bootstrap";
 
