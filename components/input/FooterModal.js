@@ -10,7 +10,7 @@ const FooterModal = () => {
 
     return (
         <>
-            <Button variant="link" onClick={toggleVisibility}><h5 className="text-center m-2">Kontakta Majgull</h5></Button>
+            <h5 className="text-center m-2"><Button variant="link" onClick={toggleVisibility}>Kontakta Majgull</Button> </h5>
 
             <Modal show={modalVisible} onHide={toggleVisibility}>
                 <Modal.Header closeButton>

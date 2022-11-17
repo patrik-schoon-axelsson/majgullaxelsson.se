@@ -8,7 +8,7 @@ const NewsCard = (props) => {
                 {props.evenIndex === 1 ?
                 <Container>
                     <Row>
-                        <h4 className="text-center m-3">{props.title}</h4>
+                        <h4 className="text-center m-3 display-handwriting">{props.title}</h4>
                     </Row>
                     <Row>
                         <Col lg={4} sm={5}>
