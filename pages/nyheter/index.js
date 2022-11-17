@@ -14,7 +14,7 @@ const NewsIndexPage = ({ news }) => {
                     <br/>
                 </Row>
             </Container>
-            <Container>
+            <Container fluid className="text-center">
                 {news.map((item, index) => <NewsCard key={`news-${index}`} evenIndex={(index % 2)} title={item.Header} content={item.Contents} slug={item.Slug} />)}
             </Container>
         </Layout>

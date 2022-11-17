@@ -8,16 +8,16 @@ const AboutPage = () => {
         <Layout>
             <Head>
                 <title>{`MajgullAxelssons.se - Om Majgull Axelsson}`}</title>
-                <meta name="description" content="Om Majgull Axelsson i hennes egna ord..." />
+                <meta name="description" content="Om Majgull Axelsson ..." />
             </Head>
             <Container>
                 <Row>
-                    <h1 className="m-3 text-center">Majgull Axelsson om Majgull</h1>
+                    <h1 className="m-3 text-center display-handwriting">Majgull Axelsson om Majgull</h1>
                 </Row>
                 <hr/>
                 <Row>
                     <h4 className="mb-5 text-center">Hej!</h4>
-                    <div style={{width: '100%', height: '480px',  position: 'relative', float: 'left', overflow: "hidden", borderRadius: "50%"}} >
+                    <div style={{width: '100%', height: '480px',  position: 'relative', float: 'left', overflow: "hidden"}} >
                         <Image src="https://cms.majgullaxelsson.se/assets/a7200bf4-3969-46b2-910d-1f3b2656243a" objectFit="contain" layout="fill" className="imgCircular" />
                     </div>
                 </Row>
