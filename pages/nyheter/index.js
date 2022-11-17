@@ -1,3 +1,4 @@
+import NewsCard from "../../components/NewsCard";
 import axiosInstance from "../../inc/axios-instance";
 import Link from "next/link";
 import Layout from "../../components/Layout";
@@ -12,9 +13,9 @@ const NewsIndexPage = ({ news }) => {
                     <h1 className="m-5 text-center">Senaste Nyheter:</h1>
                     <br/>
                 </Row>
-                <Row>
-                    {news.map((item, index) => <Link key={`news-${index}`} href={`/nyheter/${item.Slug}`}>{item.Header}</Link>)}
-                </Row>  
+            </Container>
+            <Container>
+                {news.map((item, index) => <NewsCard key={`news-${index}`} evenIndex={(index % 2)} title={item.Header} content={item.Contents} slug={item.Slug} />)}
             </Container>
         </Layout>
     )
