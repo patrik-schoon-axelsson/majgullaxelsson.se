@@ -12,7 +12,7 @@ const NewsCard = (props) => {
                     </Row>
                     <Row>
                         <Col lg={4} sm={5}>
-                            <Link href={props.slug} className="text-center m-2 btn">Läs Mer</Link>
+                            <Link href={`nyheter/${props.slug}`} className="text-center m-2 btn">Läs Mer</Link>
                         </Col>
                         <Col lg={8} sm={7}>
                             <div dangerouslySetInnerHTML={{__html: props.content}} />
@@ -29,7 +29,7 @@ const NewsCard = (props) => {
                             <div dangerouslySetInnerHTML={{__html: props.content}} />
                         </Col>
                         <Col lg={8} sm={7}>
-                            <Link href={props.slug} className="text-center m-2 btn btn-primary">Läs Mer</Link>
+                            <Link href={`nyheter/${props.slug}`} className="text-center m-2 btn btn-primary">Läs Mer</Link>
                         </Col>
                     </Row>
                 </Container>

@@ -48,7 +48,7 @@ const BockerPage = ({ book }) => {
               <Row>
                 <Col xs={12} md={6} lg={4} >
                   <div style={{width: 'auto', height: '540px',  position: 'relative', float: 'left', display: "block"}} >
-                    <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} objectFit="contain" layout="fill" className="rounded mx-auto d-block" />
+                    <Image src={`https://cms.majgullaxelsson.se/assets/${book.CoverImg}`} objectFit="contain" layout="fill" className="rounded mx-auto d-block" alt={`Omslagsbild till boken ${book.Title}`} />
                   </div>                    
                 </Col>
                 <Col xs={12} md={6} lg={8}>

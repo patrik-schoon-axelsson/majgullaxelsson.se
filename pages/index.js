@@ -19,25 +19,18 @@ export default function Home({ books, news }) {
           <HeroImage latestNews={news[0]} />
         </Row>
         <Row>
-          <Col sm={12} md={4}>
+          <Col sm={12} md={6}>
             <h4 className="text-center mt-4">Nyheter</h4>
             <hr/>
             <ul className="list-group">
               {news.map((item, index) => <li key={`news-${index}`} className="list-group-item"><Link href={`/nyheter/${item.Slug}`}>{item.Header}</Link></li>)}
             </ul>
           </Col>
-          <Col sm={12} md={4}>
+          <Col sm={12} md={6}>
             <h4 className="text-center mt-4">Majgulls Böcker</h4>
             <hr/>
             <ul className="list-group">
               {books.map((book, index) => <li key={`bocker-${index}`} className="list-group-item"><Link href={`/bocker/${book.Slug}`}>{book.Title}</Link></li>)}
-            </ul>
-          </Col>
-          <Col sm={12} md={4}>
-            <h4 className="text-center mt-4">Externa Länkar</h4>
-            <hr/>
-            <ul className="list-group">
-              <li className="list-group-item">Intervjuer och liknande</li>
             </ul>
           </Col>
         </Row>

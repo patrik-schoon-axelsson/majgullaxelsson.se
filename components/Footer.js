@@ -15,10 +15,10 @@ const Footer = () => {
                             <FooterModal />
                         </Col>
                         <Col xs={12} md={4}>
-                            <h5 className="text-center m-2"><a target="_blank" href="https://www.goodreads.com/author/show/165549.Majgull_Axelsson">Majgull på Goodreads</a></h5>
+                            <h5 className="text-center m-2"><a target="_blank" rel="noreferrer" href="https://www.goodreads.com/author/show/165549.Majgull_Axelsson">Majgull på Goodreads</a></h5>
                         </Col>
                         <Col xs={12} md={4}>
-                            <h5 className="text-center m-2"><a target="_blank" href="https://www.norstedts.se/115660-majgull-axelsson">Majgull hos Norstedts Förlag</a></h5>
+                            <h5 className="text-center m-2"><a target="_blank" rel="noreferrer" href="https://www.norstedts.se/115660-majgull-axelsson">Majgull hos Norstedts Förlag</a></h5>
                         </Col>
                     </Row>
                 </Container>
